@@ -2,41 +2,41 @@ const Doador = require('../models/Doador');
 
 module.exports = {
     async index(req, res) {
-        const donors = await Doador.findAll();
+        const doadores = await Doador.findAll();
 
-        return res.json(donors); //retorna todos os doadores
+        return res.json(doadores); //retorna todos os doadores
     },
 
     async show(req, res) {
         const { id } = req.params;
-        const donor = await Doador.findByPk(id);
+        const doador = await Doador.findByPk(id);
       
-        if (!donor) {
+        if (!doador) {
           return res.status(400).json({ error: "Doador não existe" });
         }
       
-        return res.json(donor);
+        return res.json(doador);
       },
 
     async store(req, res) {
         const { nome, cpf, email, senha } = req.body;
 
-        const donor = await Doador.create({ nome, cpf, email, senha })
+        const doador = await Doador.create({ nome, cpf, email, senha });
 
-        return res.json(donor);
+        return res.json(doador);
     },
 
     async update(req, res) {
         const { id } = req.params;
         const { nome, cpf, email, senha } = req.body;
 
-        const donor = await Doador.findByPk(id);
+        const doador = await Doador.findByPk(id);
 
-        if (!donor) {
+        if (!doador) {
             return res.status(400).json({ error: 'Falha ao atualizar doador' });
         }
 
-        const updatedDoador = await donor.update({ nome, cpf, email, senha });
+        const updatedDoador = await doador.update({ nome, cpf, email, senha });
 
         return res.json(updatedDoador);
     },
@@ -44,13 +44,13 @@ module.exports = {
     async delete(req, res) {
         const { id } = req.params;
 
-        const donor = await Doador.findByPk(id);
+        const doador = await Doador.findByPk(id);
 
-        if (!donor) {
+        if (!doador) {
             return res.status(400).json({ error: 'Doador não encontrado' });
         }
 
-        await donor.destroy();
+        await doador.destroy();
         return res.send();
     }
 }

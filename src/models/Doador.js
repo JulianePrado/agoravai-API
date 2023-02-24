@@ -16,6 +16,4 @@ class Doador extends Model {
 }
 
 
-
-
 module.exports = Doador;

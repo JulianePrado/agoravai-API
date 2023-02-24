@@ -1,6 +1,6 @@
 module.exports = {
     dialect: 'sqlite',
-    storage: './ajuda.sqlite',
+    storage: './ajudadb.sqlite',
     define: {
       timestamps: true,
       underscored: true,
