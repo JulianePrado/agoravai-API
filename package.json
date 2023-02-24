@@ -1,7 +1,6 @@
 {
   "name": "projeto-solidariedade",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js"
@@ -14,5 +13,16 @@
     "sequelize": "^6.28.2",
     "sequelize-cli": "^6.6.0",
     "sqlite3": "^5.1.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianePrado/agoravai-API.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/JulianePrado/agoravai-API/issues"
+  },
+  "homepage": "https://github.com/JulianePrado/agoravai-API#readme",
+  "description": ""
 }
