@@ -19,7 +19,7 @@ module.exports = {
       },
 
     async store(req, res) {
-        const { nome, cpf, email, senha } = req.body;
+        const { tipo, condicao } = req.body;
 
         const movel = await Movel.create({ tipo, condicao })
 

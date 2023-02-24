@@ -4,7 +4,7 @@ module.exports = {
     async index(req, res) {
         const produtos = await Produto.findAll();
 
-        return res.json(produtos); //retorna todos os donatarios
+        return res.json(produtos); //retorna todos os produtos
     },
 
     async show(req, res) {
