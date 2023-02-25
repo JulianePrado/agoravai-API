@@ -1,20 +1,20 @@
 const express = require ('express');
-const DoadorController = require('./controllers/DoadorController');
+const UsuarioController = require('./controllers/UsuarioController');
 const DonatarioController = require('./controllers/DonatarioController');
 const MovelController = require('./controllers/MovelController');
 const ProdutoController = require('./controllers/ProdutoController');
 const RoupaController = require('./controllers/RoupaController');
 
 
-//rotas de doadores ↓
-
 const routes = express.Router();
 
-routes.get('/doadores', DoadorController.index);
-routes.get('/doadores/:id', DoadorController.show);
-routes.post('/doadores', DoadorController.store);
-routes.put('/doadores/:id', DoadorController.update);
-routes.delete('/doadores/:id', DoadorController.delete);
+//rotas de usuarios ↓
+
+routes.get('/usuarios', UsuarioController.index);
+routes.get('/usuarios/:id', UsuarioController.show);
+routes.post('/usuarios', UsuarioController.store);
+routes.put('/usuarios/:id', UsuarioController.update);
+routes.delete('/usuarios/:id', UsuarioController.delete);
 
 //rotas dos Donatarios ↓
 
