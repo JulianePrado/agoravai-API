@@ -20,6 +20,12 @@ Essa entidades são.
 
 <li> <strong> Donatario: </strong> (onde armazenamos as informações sobre a pessoa que precisa de uma doação). </li>
 
+<li> <strong> Movel: </strong> (item para doação de acordo com suas especifidades). </li>
+
+<li> <strong> Roupas: </strong> (item para doação de acordo com suas especifidades). </li>
+
+<li> <strong> Produto: </strong> (item para doação de acordo com suas especifidades). </li>
+
 ## <h2> O que é CRUD? </h2>
 
 ![CRUD](https://user-images.githubusercontent.com/112557569/221177332-a597b62a-8875-45d4-a20c-a2246bf62311.png)
@@ -29,10 +35,12 @@ A operação CRUD é uma abreviação para as operações básicas de armazename
 
 # <h2>  :mortar_board: O Que você precisa saber para executar o projeto  </h2> 
 
-<h2> :triangular_flag_on_post: Instalando as depedências? </h2> <ul>
+<h2> :triangular_flag_on_post: Instalando as depedências e executando o projeto</h2> <ul>
   
-  <li> npm init</li>
-  <li> npm install express </li>
+  <li> npm init -y</li>
+  <li> npm install </li>
+  <li> npx sequelize db:migrate </li>
+  <li> npm run dev </li>
 
 
 
